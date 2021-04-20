@@ -64,6 +64,14 @@ main .wrapper-images .wrapper-buttons {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
+main .wrapper-images .wrapper-buttons .vg-circle {
+  color: white;
+}
+
+main .wrapper-images .wrapper-buttons .vg-circle.active {
+  color: royalblue;
+}
+
 /* /Wrapper */
 
 /* /Main */
