@@ -45,8 +45,13 @@ main .wrapper-images {
 }
 
 main .wrapper-images img {
+  display: none;
   width: 100%;
   height: 100%;
+}
+
+main .wrapper-images img.active {
+  display: block;
 }
 
 main .wrapper-images .wrapper-buttons {
@@ -62,10 +67,6 @@ main .wrapper-images .wrapper-buttons {
 /* /Wrapper */
 
 /* /Main */
-
-.active {
-  display: block;
-}
 
 .hidden {
   display: none;
