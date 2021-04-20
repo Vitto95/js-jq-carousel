@@ -2,20 +2,38 @@ $(document).ready(function () {
   //references
   var anglePrev = $(".vg-prev");
   var angleNext = $(".vg-next");
+  var imageCounter = $(".container").children(); //figli diretti di container
+  console.log(imageCounter);
 
-  console.log(angleNext);
+  //Creazione Bottoni
+  //Creo il primo elemento con classe active
+
+  $(".wrapper-buttons").append(
+    '<i class="fas fa-circle vg-circle active"></i>'
+  );
+
+  //Creo gli altri bottoni
+
+  for (var i = 0; i < imageCounter.length - 1; i++) {
+    $(".wrapper-buttons").append('<i class="fas fa-circle vg-circle"></i>');
+    var btnCounter = $(".wrapper-buttons").children();
+  }
 
   //events
+
+  //Eventi per le freccette scorrimento
+
   anglePrev.click(prevImage);
 
   angleNext.click(nextImage);
+
+  //evento per bottoni scorrimento
 
   //functions
 
   function prevImage() {
     var activeImage = $(".wrapper-images img.active");
     var activeCircle = $(".wrapper-buttons .vg-circle.active");
-    console.log(activeCircle);
     activeImage.removeClass("active");
     activeCircle.removeClass("active");
 

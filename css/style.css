@@ -70,7 +70,9 @@ main .wrapper-images .wrapper-buttons {
 }
 
 main .wrapper-images .wrapper-buttons .vg-circle {
+  cursor: pointer;
   color: white;
+  margin-right: 5px;
 }
 
 main .wrapper-images .wrapper-buttons .vg-circle.active {
